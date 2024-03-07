@@ -12,9 +12,9 @@ export default function Home() {
   );
 }
 class TodoItemProps{
-    title:string;
-    description:string;
-    checked:Boolean;
+    title:string | undefined;
+    description:string | undefined;
+    checked: Boolean | undefined;
 }
 function Navbar(){
     return<nav className="flex justify-between bg-cyan-500 ">
