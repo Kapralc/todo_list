@@ -1,19 +1,21 @@
+import {Input} from "@nextui-org/react";
 export default function Home() {
   return (
-      <div>
-          <Navbar/>
-          <div className="flex flex-row py-4 space-x-4">
-              <Card title={"Todo"} description={"moje první Todo"} checked={true}/>
-              <Card title={"Todo"} description={"moje první Todo"} checked={true}/>
-              <Card title={"Todo"} description={"moje první Todo"} checked={true}/>
+      <div className={"flex flex-col items-center"}>
+          <h2>Create your own ToDo!</h2>
+          <div className="flex flex-col items-center w-full flex-wrap md:flex-nowrap gap-4">
+              <Input type="email" label="Title" placeholder="Enter your title of your todo"/>
+              <Input type="email" label="Content" placeholder="Enter your content of your todo"/>
+              <Input type="email" label="Email" placeholder="Enter your email"/>
           </div>
       </div>
 
   );
 }
-class TodoItemProps{
-    title:string | undefined;
-    description:string | undefined;
+
+class TodoItemProps {
+    title: string | undefined;
+    description: string | undefined;
     checked: Boolean | undefined;
 }
 function Navbar(){
