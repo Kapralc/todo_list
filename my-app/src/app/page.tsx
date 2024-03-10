@@ -15,7 +15,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                       <label className="text-gray-700 mb-2 text-xl">Email (Optional)</label>
-                      <input type="email" placeholder="Enter your email" className="rounded-md border border-gray-300 px-3 py-4 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+                      <input type="email" placeholder="Enter your email" className="rounded-md border border-gray-300 px-3 py-4 focus:outline-none focus:ring-1 focus:ring-blue-700" />
                   </div>
               </form>
           </div>
